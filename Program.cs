@@ -36,3 +36,19 @@ const int maxElementLength = 3; // максимальная длина элем�
 
 Console.Write("Какое количество элементов будет в исходном массиве? ");
 int numbersN = Convert.ToInt32(Console.ReadLine());
+
+
+string[] startArray = new string[numbersN];
+FillStartArray(stringArray: startArray,
+                    maxLength: maxElementLength,
+                    out int finalArraySize
+                    );
+
+
+string[] finalArray = new string[finalArraySize];
+finalArray = MakeResultArray(stringArray: startArray,
+                                maxLength: maxElementLength,
+                                arraySize: finalArraySize
+                                );
+
+Console.WriteLine("[" + String.Join(",", startArray) + "] -> [" + String.Join(",", finalArray) + "]");
