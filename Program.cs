@@ -29,3 +29,10 @@ string[] MakeResultArray(string[] stringArray, int maxLength, int arraySize)
 
     return finalArrayString;
 }
+
+
+Console.Clear();
+const int maxElementLength = 3; // максимальная длина элементов массива, которые будем выбирать
+
+Console.Write("Какое количество элементов будет в исходном массиве? ");
+int numbersN = Convert.ToInt32(Console.ReadLine());
